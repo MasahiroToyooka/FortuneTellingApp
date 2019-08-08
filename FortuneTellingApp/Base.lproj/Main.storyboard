@@ -61,7 +61,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="kfg-lu-iCd">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kfg-lu-iCd">
                                 <rect key="frame" x="0.0" y="328.33333333333331" width="375" height="41.333333333333314"/>
                                 <segments>
                                     <segment title="A"/>
@@ -153,6 +153,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bloodsegment" destination="kfg-lu-iCd" id="SVI-Jm-EYp"/>
                         <outlet property="dataPicker" destination="rzR-iR-Sw1" id="CKR-cq-xwb"/>
                         <outlet property="numLabel" destination="gCw-pK-qp1" id="cTx-Uj-KrE"/>
                         <outlet property="resultTextView" destination="nuu-B8-Bf4" id="vc1-IM-AoL"/>
