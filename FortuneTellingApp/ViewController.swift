@@ -67,9 +67,9 @@ class ViewController: UIViewController {
     fileprivate func setPickerNum() -> Int {
         let date = dataPicker.date
         
-        let year = dataPicker.calendar.component(.year, from: date)
-        let month = dataPicker.calendar.component(.month, from: date)
-        let day = dataPicker.calendar.component(.day, from: date)
+        let year: Int = dataPicker.calendar.component(.year, from: date)
+        let month: Int = dataPicker.calendar.component(.month, from: date)
+        let day: Int = dataPicker.calendar.component(.day, from: date)
         
         let num = ((year + month + day) % 4)
         
